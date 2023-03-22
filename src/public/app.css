@@ -1,0 +1,17 @@
+.img-content{
+  margin: 5px 0px 35px 35px;
+}
+
+.imgrows{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgcard{
+  max-width: 300px;
+  margin: 10px;
+  border-style: solid;
+  border-color: rgb(212, 208, 208);
+  border-radius: 10px;
+  padding: 5px;
+}

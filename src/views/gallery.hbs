@@ -1,0 +1,37 @@
+<!-------Navbar--------->
+{{>navigation}}
+
+
+<!------Imagenes------->
+{{#if imagesFind}} <!---Si hay imagenes entonces muestralas--->
+
+<!---Imagenes--->
+<div class="img-content">
+  <div class="imgrows">
+
+      <!----Ciclo for de handlebars---->
+      {{#each imagesFind}} 
+        <div class="imgcard animate__fadeInDown">
+          <img src="{{path}}" alt="{{title}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{title}}</h5>
+              <p class="card-text">{{description}}</p>
+              <p class="card-text">{{format createdAt}}</p>
+              <a href="/img/{{_id}}" class="btn btn-primary">
+                Descripción
+              </a>
+            </div>
+        </div>
+      {{/each}}
+
+  </div>
+</div>
+
+{{else}} <!---No hay imagenes por mostrar--->
+
+  <div class="container p-4">
+    <h1>No hay imagenes aún</h1>
+    <img src="https://imgs.search.brave.com/mVY2SswMrqinLaTkmVy_JQKJeEGLjjDRuYRnJuiJZ9U/rs:fit:830:400:1/g:ce/aHR0cDovL3d3dy5z/bWpyZW1pdC5jb20v/aW1nL3Vzci9pY29u/LTQwNC5wbmc" alt="No hay nada aún" width="500"  length="500">
+  </div>
+
+{{/if}}
