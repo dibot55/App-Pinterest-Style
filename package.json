@@ -30,7 +30,7 @@
     "@babel/preset-env": "^7.20.2",
     "ncp": "^2.0.0",
     "nodemon": "^2.0.21"
-  },
+  },  
   "vercel": {
     "build": {
       "env": {
@@ -40,5 +40,5 @@
       "command": "npm run build",
       "output": "dist/index.js"
     }
-  }  
+  }
 }
